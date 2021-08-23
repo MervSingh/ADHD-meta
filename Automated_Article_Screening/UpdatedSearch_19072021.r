@@ -24,9 +24,6 @@ write.csv(all_new, file = "all_aug2020_jul2021_articles.csv")
 
 # DEDUPLICATION ---
 
-# NOTE: Due to the extensive processing time involved, Deduplication is done separately using job scripts submitted to a SLURM scheduler
-# Jobs scripts are labelled dup.sh and dup2.sh for phase 1 and phase 2 respectively
-
 # Phase 1
 # based on doi
 duplicates <- find_duplicates(all_new)
