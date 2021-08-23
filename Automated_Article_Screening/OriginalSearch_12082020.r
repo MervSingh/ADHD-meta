@@ -25,9 +25,6 @@ save.image("NEW_ADHDscreen.Rdata")
 
 # DEDUPLICATION ---
 
-# NOTE: Due to the extensive processing time involved, Deduplication is done separately using job scripts submitted to a SLURM scheduler
-# Jobs scripts are labelled dup.sh and dup2.sh for phase 1 and phase 2 respectively
-
 # Phase 1
 # based on doi
 duplicates <- find_duplicates(all)
